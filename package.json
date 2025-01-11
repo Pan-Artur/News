@@ -1,0 +1,25 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Pan-Artur/News#readme",
+  "bugs": {
+    "url": "https://github.com/Pan-Artur/News/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pan-Artur/News.git"
+  },
+  "license": "ISC",
+  "author": "Artur Pankovets",
+  "type": "module",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
+  },
+  "dependencies": {
+    "parcel": "^2.13.3"
+  }
+}
