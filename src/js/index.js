@@ -1,7 +1,5 @@
-const getKeyword = (selector) => {
-    const inputElement = document.querySelector(selector);
-    return inputElement.value;
-};
+import { getNews } from "./get-news-api";
+import { getKeyword } from "./make-keyword";
 
 const setupSearchButton = () => {
     const btn = document.querySelector("#search-news");

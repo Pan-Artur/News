@@ -20,6 +20,8 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
+    "gh": "^2.8.9",
+    "pages": "^0.0.16",
     "parcel": "^2.13.3"
   }
 }
