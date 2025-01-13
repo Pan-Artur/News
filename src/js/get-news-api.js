@@ -4,5 +4,8 @@ export const getNews = (keyword) => {
     const API = `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${API_KEY}&language=uk`;
     return fetch(API)
         .then((data) => data.json())
-        .then((data) => console.log(data));
+        .then((data) => {
+            console.log(data);
+            return data;
+        });
 };
